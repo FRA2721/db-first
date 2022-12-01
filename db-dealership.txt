@@ -1,0 +1,26 @@
+/*** db dealership car project ***/
+Modellare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+
+
+/*** DEALERSHIP DATABASE DEFINITIONS ***/
+CARS-TABLE/* cars db table */
+
+CARS
+
+id                        - INT               - PRIMARY_KEY(NOTNULL, UNIQUE)      - AUTO_INCREMENT
+car_manufacturers         - VARCHAR(30)       - NOTNULL
+car_model                 - VARCHAR(50)       - NOTNULL
+car_power_supply          - VARCHAR(15)       - NOTNULL       
+car_trasmission           - VARCHAR(20)       - NOTNULL
+car_price                 - DECIMAL(10, 0)    - NOTNULL (alternative ---> /* DECIMAL(10, 2) */)
+car_horses_power          - SMALLINT          - NOTNULL
+car_engine_capacity       - SMALLINT          - NOTNULL
+car_km_travelled          - MEDIUMINT         - NOTNULL
+car_path                  - VARCHAR(255)      - NOTNULL                           - DEFAULT('/img/src/car.png')
+car_description           - TEXT              - NOTNULL
+car_year_production       - YEAR              - NOTNULL
+car_color                 - VARCHAR(20)       - NULL
+car_optional              - VARCHAR(255)      - NULL                              
+
+/*** example of database for a dealership ***/
