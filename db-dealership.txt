@@ -1,4 +1,4 @@
-/*** db dealership car project ***/
+/*** db dealership project ***/
 Modellare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
 
 
@@ -9,7 +9,7 @@ CARS-TABLE/* cars db table */
 CARS
 
 id                        - INT               - PRIMARY_KEY(NOTNULL, UNIQUE)      - AUTO_INCREMENT
-car_manufacturers         - VARCHAR(30)       - NOTNULL
+car_manufacturers         - VARCHAR(30)       - NOTNULL                           - INDEX
 car_model                 - VARCHAR(50)       - NOTNULL
 car_power_supply          - VARCHAR(15)       - NOTNULL       
 car_trasmission           - VARCHAR(20)       - NOTNULL
