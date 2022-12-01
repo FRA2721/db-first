@@ -20,6 +20,8 @@ car_year_production       - YEAR              - NOTNULL
 car_description           - TEXT              - NULL
 car_engine_capacity       - SMALLINT          - NULL
 car_horses_power          - SMALLINT          - NULL
-car_color                 - VARCHAR(20)       - NULL                         
+car_color                 - VARCHAR(50)       - NULL 
+car_weight_kg             - SMALLINT          - NULL
+car_height_cm             - SMALLINT          - NULL        
 
 /*** example of database for a dealership ***/
